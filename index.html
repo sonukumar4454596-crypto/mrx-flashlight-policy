@@ -1,1 +1,202 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - MRX Flashlight</title>
+  <style>
+    :root {
+      --bg: #09090b;
+      --card: #141417;
+      --border: #27272a;
+      --accent: #ff1744;
+      --text: #fafafa;
+      --muted: #a1a1aa;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 32px 16px 64px;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 32px;
+      padding: 28px 20px;
+      background: linear-gradient(145deg, #1a0b0e, #121215);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+    }
+    .brand {
+      font-size: 2rem;
+      font-weight: 900;
+      font-style: italic;
+      letter-spacing: 2px;
+      color: var(--accent);
+    }
+    .brand span {
+      color: var(--text);
+      font-style: normal;
+      font-size: 1.1rem;
+      display: block;
+      letter-spacing: 4px;
+      margin-top: 2px;
+    }
+    h1 {
+      font-size: 1.65rem;
+      margin-top: 14px;
+      color: var(--text);
+    }
+    .meta {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 4px 12px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #fff;
+      background-color: var(--accent);
+      border-radius: 999px;
+    }
+    .card {
+      background-color: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px 24px;
+      margin-bottom: 18px;
+    }
+    .card h2 {
+      font-size: 1.15rem;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    .card p, .card li {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+    .card ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .card li {
+      margin-bottom: 8px;
+    }
+    .card strong {
+      color: var(--text);
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      margin-top: 36px;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">MRX <span>FLASHLIGHT</span></div>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Package: <strong>com.sonu.mrxflashlight.apps</strong> &bull; Last updated: <strong>October 11, 2026</strong></p>
+      <span class="badge">100% Offline &amp; Zero Data Collection</span>
+    </div>
+
+    <div class="card">
+      <h2>1. No Data Collection or Sharing</h2>
+      <p>
+        <strong>MRX Flashlight</strong> (developed by <strong>Sonu Lal</strong>) is built on a strict zero-data principle. The application does not collect, record, store, share, transmit, or sell any personal information, usage data, device identifiers, or analytics. No user account, registration, or login is required to use any feature of the app.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>2. Permissions Used and Why</h2>
+      <ul>
+        <li><strong>Camera (<code>android.permission.CAMERA</code>):</strong> Used solely to control the device's physical LED flash hardware via Android's <code>CameraManager</code>. No photos, videos, or camera previews are ever captured, recorded, or saved.</li>
+        <li><strong>Accelerometer Sensor (<code>TYPE_ACCELEROMETER</code>):</strong> Used for the optional "Shake to Toggle" feature so you can shake your phone to turn the flashlight ON or OFF. Sensor data is processed in real time strictly on your device and is never stored or transmitted.</li>
+        <li><strong>Vibration (<code>android.permission.VIBRATE</code>):</strong> Used only to provide tactile haptic feedback when toggling the torch, changing modes, or shaking the device.</li>
+        <li><strong>Foreground Service &amp; Notifications (<code>FOREGROUND_SERVICE</code>, <code>POST_NOTIFICATIONS</code>):</strong> Used only when you enable "Shake to Toggle" so that shake detection continues working reliably while the screen is off or the app is in the background.</li>
+        <li><strong>Keep Screen On:</strong> Used to keep the display active while Screen Light mode is in use.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. Permissions &amp; Features NOT Used</h2>
+      <p>MRX Flashlight does <strong>not</strong> request or use any of the following:</p>
+      <ul>
+        <li>No <code>INTERNET</code> permission (the app cannot connect to external servers)</li>
+        <li>No third-party advertisements or ad networks</li>
+        <li>No analytics, telemetry, or crash-tracking SDKs</li>
+        <li>No location (GPS), contacts, microphone, or external storage access</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>4. Local Device Storage Only</h2>
+      <p>
+        User preferences (such as selected screen light color, brightness level, default mode, shake sensitivity, and vibration settings) are stored strictly locally on your device using Android <code>SharedPreferences</code>. Removing or uninstalling the application permanently deletes all saved preferences.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>5. Photosensitivity Warning</h2>
+      <p>
+        The Strobe mode produces rapid flashing lights (1 Hz to 10 Hz), which may trigger seizures or discomfort in individuals with photosensitive epilepsy or light sensitivities. An in-app warning is displayed before activation. Please use caution and never point the LED light directly into anyone's eyes.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>6. Children's Privacy</h2>
+      <p>
+        MRX Flashlight is safe for general audiences, is not directed at children under the age of 13, and does not knowingly or unknowingly collect any data from children or any other users.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>7. Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. Any changes will be reflected on this page and inside the app with an updated "Last updated" date.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>8. Contact Us</h2>
+      <p>
+        If you have any questions or concerns about this Privacy Policy or MRX Flashlight, please contact the developer:
+      </p>
+      <ul>
+        <li><strong>Developer:</strong> Sonu Lal</li>
+        <li><strong>Email:</strong> <a href="mailto:appdeveloperall143@gmail.com">appdeveloperall143@gmail.com</a></li>
+        <li><strong>YouTube:</strong> <a href="https://www.youtube.com/@mrx143musicai" target="_blank" rel="noopener">https://www.youtube.com/@mrx143musicai</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/mrx143.lyrics" target="_blank" rel="noopener">https://www.instagram.com/mrx143.lyrics</a></li>
+        <li><strong>Snapchat:</strong> <a href="https://www.snapchat.com/add/mrx143_lyrics" target="_blank" rel="noopener">https://www.snapchat.com/add/mrx143_lyrics</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      &copy; 2026 Sonu Lal. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
